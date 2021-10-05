@@ -1,19 +1,50 @@
 {
   "name": "react-chakra-ui-table",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "React component for simple table make from React Table and Chakra UI",
+  "keywords": [
+    "react",
+    "table",
+    "component",
+    "chakra ui",
+    "react-table",
+    "simple table"
+  ],
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "author": "Chalermchon Samana <aday.3ddesign@gmail.com>",
+  "homepage": "http://www.appcodemia.com",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adaydesign/react-chakra-ui-table"
+  },
   "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "@chakra-ui/icons": "^1.0.15",
+    "@chakra-ui/react": "^1.6.9",
+    "@emotion/react": "^11.4.1",
+    "@emotion/styled": "^11.3.0",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "framer-motion": "^4.1.17",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1",
     "react-scripts": "4.0.3",
+    "react-select": "^5.1.0",
+    "react-table": "^7.7.0",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "react-build": "react-scripts build",
+    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -34,5 +65,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6"
   }
 }
